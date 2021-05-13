@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .sougou{
+            width:70vw ;
+            height: 70vh;
+            margin: 0 auto;
+        }
+        .header{
+            width: 70vw;
+            height: 30vh;
+            position: relative;
+        }
+        .header .logo{
+            width: 40vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .centent {
+            width: 70vw;
+            height:10vh;
+        }
+        .centent input {
+            width: 55vw;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, .5);
+            float: left;
+            border-right: none;
+            font-size: 20px;
+        }
+        .centent .search{
+            width: 14vw;
+            height: 51.5px;
+            border: 1px solid rgba(0, 0, 0, .5);
+            float: left;
+            font-size: 22px;
+        }
+        .footer {
+            width: 70vw;
+            height:30vh;
+            margin-top: 25vh;
+        }
+        .footer .qrcode{
+            width: 150px;
+            margin: 0 auto;
+        }
+        .footer img{
+            width: 150px;
+        }
+        .footer .font{
+            font-size: 12px;
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="sougou">
+        <div class="header">
+            <img src="./logo.png" alt="" class="logo">
+        </div>
+        <div class="centent">
+            <input type="text" id="inp">
+            <button class="search">搜狗搜索</button>
+        </div>
+        <div class="footer">
+            <div class="qrcode">
+                <img src="./qrcode.png" alt="">
+                <span class="font">下载搜狗搜索APP</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*
+        2. 实现超出整数存储范围的两个大正整数相加 function add(a, b) 。
+注意：参数 a 和 b 以及函数的返回值都是字符串。*/
+
+        function add(a,b){
+            var aarr = a.split("");
+            var barr = b.split("");
+            var arr = [];
+            var sum;
+            var index;
+            if(aarr.length != barr.length){
+                if(aarr.length > barr.length){
+                    index = aarr.length - barr.length;
+                    for(var j=0;j<index;j++){
+                        barr.unshift(0);
+                    }
+                }else{
+                    index = barr.length - aarr.length;
+                    for(var j=0;j<index;j++){
+                        aarr.unshift(0);
+                    }
+                }
+            }
+            for(var i=aarr.length-1;i>0;i--){
+                if(Number(aarr[i])+Number(barr[i])>=10){
+                    aarr[i-1]=(Number(aarr[i-1])+1)+"";
+                    sum = Number(aarr[i])+Number(barr[i])-10;
+                } else{
+                    sum = Number(aarr[i])+Number(barr[i])
+                }  
+                arr.unshift(sum);
+            }
+            if(Number(aarr[0])+Number(barr[0])>=10){
+                sum = Number(aarr[i])+Number(barr[i])-10;
+                arr.unshift(sum);
+                arr.unshift(1);
+            }else{
+                sum = Number(aarr[0])+Number(barr[0]);
+                arr.unshift(sum);
+            }
+            return arr.join("");
+        }
+        console.log(add("345","3456"));
+        
+    </script>
+    <!-- <script>
+        var Search = document.getElementsByClassName("search")[0];
+        var inputvalue = document.getElementById("inp");
+        Search.onclick = function(){
+            var centent = inputvalue.value;
+            alert(centent);
+        }
+    </script> -->
+    <script>
+        /*
+        1、已知时间，求分针和时针的夹角
+
+2. 实现超出整数存储范围的两个大正整数相加 function add(a, b) 。
+注意：参数 a 和 b 以及函数的返回值都是字符串。
+
+3、模仿 搜狗 首页，静态页面，文本框输入后点击搜索按钮，alert 输入内容
+https://www.sogou.com
+
+        */
+        
+        // var getJd = function(hour,min){
+        //     hour = hour%12;
+        //     min = min%60;
+        //     var hangle = 360-(30*hour+0.5*min);
+        //     var mangle = 6*min;
+        //     var angle = hangle + mangle;
+        //     if(angle>=360){
+        //         return angle-360;
+        //     }else{
+        //         return angle;
+        //     }
+            
+        // }
+
+        // var angles = getJd(12,15);
+
+
+    </script>
+</body>
+</html>
