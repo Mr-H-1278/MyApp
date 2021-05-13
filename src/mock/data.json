@@ -1,0 +1,182 @@
+{
+  "computer": [
+    {
+      "name": "数贸云计算机",
+      "totle": 0.05,
+      "rankRate": 3600,
+      "Price": 0.003,
+      "maxbuy": "3",
+      "workrate":0.1,
+      "isrun":"正在运行",
+      "intr":"别看我小，我也有力量"
+    },
+    {
+      "name": "Y型云计算机",
+      "totle": 0.1,
+      "rankRate": 3600,
+      "Price": 0.01,
+      "maxbuy": "5",
+      "workrate":0.2,
+      "isrun":"正在运行",
+      "intr":"比他大一点，但还是很弱"
+    },
+    {
+      "name": "S型计算机",
+      "totle": 1.0,
+      "rankRate": 3600,
+      "Price": 0.1,
+      "maxbuy": "35",
+      "workrate":0.3,
+      "isrun":"等待运行",
+      "intr":"正在努力挖矿中"
+    },
+    {
+      "name": "M型计算机",
+      "totle": 5.0,
+      "rankRate": 3600,
+      "Price": 0.5,
+      "maxbuy": "25",
+      "workrate":1.0,
+      "isrun":"等待运行",
+      "intr":"随便运行都能让你起飞"
+    },
+    {
+      "name": "巨型计算机",
+      "totle": 15.0,
+      "rankRate": 3600,
+      "Price": 10,
+      "maxbuy": "1",
+      "workrate":5.0,
+      "isrun":"等待运行",
+      "intr":"我已经天下无敌了"
+    }
+  ],
+  "buylist": [
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"张三",
+      "phone":13617906649,
+      "sellcount":100.00
+    },
+    {
+      "credit":98,
+      "price":2.00,
+      "name":"里斯",
+      "phone":17770845413,
+      "sellcount":200.00
+    },
+    {
+      "credit":99,
+      "price":2.00,
+      "name":"昭武",
+      "phone":18976549082,
+      "sellcount":150.00
+    },
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"小刘",
+      "phone":18762535362,
+      "sellcount":100.00
+    },
+    {
+      "credit":95,
+      "price":2.00,
+      "name":"王总",
+      "phone":19908797863,
+      "sellcount":500.00
+    },
+    {
+      "credit":90,
+      "price":2.00,
+      "name":"肖老板",
+      "phone":15270168280,
+      "sellcount":50.00
+    },
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"伟哥",
+      "phone":14478796565,
+      "sellcount":200.00
+    },
+    {
+      "credit":99,
+      "price":2.00,
+      "name":"王成",
+      "phone":15270896543,
+      "sellcount":130.00
+    },
+    {
+      "credit":98,
+      "price":2.00,
+      "name":"帅帅",
+      "phone":16578290987,
+      "sellcount":100.00
+    },
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"哥哥",
+      "phone":19979070004,
+      "sellcount":140.00
+    },
+    {
+      "credit":97,
+      "price":2.00,
+      "name":"妹妹",
+      "phone":13500627907,
+      "sellcount":20.00
+    },
+    {
+      "credit":90,
+      "price":2.00,
+      "name":"贾洛",
+      "phone":15378908827,
+      "sellcount":120.00
+    },
+    {
+      "credit":99,
+      "price":2.00,
+      "name":"小可爱",
+      "phone":13379092289,
+      "sellcount":1000.00
+    },
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"邋遢",
+      "phone":12345678910,
+      "sellcount":60.00
+    },
+    {
+      "credit":97,
+      "price":2.00,
+      "name":"好的",
+      "phone":17790273829,
+      "sellcount":100.00
+    },
+    {
+      "credit":99,
+      "price":2.00,
+      "name":"河岸",
+      "phone":15579872837,
+      "sellcount":20.00
+    },
+    {
+      "credit":100,
+      "price":2.00,
+      "name":"赵云",
+      "phone":14672837323,
+      "sellcount":10.00
+    },
+    {
+      "credit":95,
+      "price":2.00,
+      "name":"张亮",
+      "phone":12423213213,
+      "sellcount":100.00
+    }     
+]
+}
